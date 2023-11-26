@@ -11,7 +11,9 @@ function Index() {
 				stands as a testament to seamless collaboration and unparalleled
 				connectivity.
 			</p>
-			<button className="btn">Explore Neon</button>
+			<a href="https://neon.tech/" className="btn">
+				Explore Neon
+			</a>
 		</div>
 	);
 }
