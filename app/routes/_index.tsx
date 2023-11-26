@@ -1,41 +1,19 @@
-import type { MetaFunction } from "@remix-run/node";
+// import { Link } from '@remix-run/react';
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
-
-export default function Index() {
-  return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
-  );
+function Index() {
+	return (
+		<div>
+			<h1>Welcome to PostHive!</h1>
+			<p>
+				PostHive is a vibrant platform meticulously crafted with Remix, Neon,
+				and Prisma technologies, fueled by a robust PostgreSQL database.
+				Embracing cutting-edge frameworks and an innovative approach, PostHive
+				stands as a testament to seamless collaboration and unparalleled
+				connectivity.
+			</p>
+			<button className="btn">Explore Neon</button>
+		</div>
+	);
 }
+
+export default Index;
