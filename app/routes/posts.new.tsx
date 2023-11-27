@@ -1,4 +1,22 @@
+import type { ActionFunction } from '@remix-run/node';
+
+import { redirect } from '@remix-run/node';
 import { Link, Form } from '@remix-run/react';
+
+export const action: ActionFunction = async ({ request }) => {
+	const form = await request.formData();
+	const title = form.get('title') ?? '';
+	const body = form.get('body') ?? '';
+
+	const fields = {
+		title: String(title),
+		body: String(body),
+	};
+
+	console.log(fields);
+
+	return redirect('/posts');
+};
 
 const NewPost = () => {
 	return (
